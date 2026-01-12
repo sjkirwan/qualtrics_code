@@ -27,9 +27,9 @@ jQuery(function($) {
 
       // TODO: for each element, try if there's a corresponding div to show the values
       Object.entries(circlesData).forEach(([key, values]) => {
-        if ( $('#' + key + '-distance').length && key == id) {
-          $('#' + key + '-distance').text(leftPos);
-        }
+        //if ( $('#' + key + '-distance').length && key == id) {
+        //  $('#' + key + '-distance').text(leftPos);
+        //}
         if ( $('#' + id + '-overlap').length && key == id) {
           $('#' + id + '-overlap').text(overlapPercentage + '%');
         }

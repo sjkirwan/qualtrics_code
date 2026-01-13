@@ -24,7 +24,7 @@ jQuery(function($) {
 
       var id = element.attr('id');
       //circlesData[id] = {'distance': leftPos, 'overlap': overlapPercentage}
-      circlesData[id] = {'overlap': overlapPercentage}
+      //circlesData[id] = {'overlap': overlapPercentage}
 
       // TODO: for each element, try if there's a corresponding div to show the values
       Object.entries(circlesData).forEach(([key, values]) => {

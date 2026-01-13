@@ -1,6 +1,6 @@
 var circlesData = {};
 
-jQuery(function($) {
+//jQuery(function($) {
 
   //container width defined in css, 300px
 

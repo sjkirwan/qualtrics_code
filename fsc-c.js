@@ -1,6 +1,6 @@
 var circlesData = {};
 
-//jQuery(function($) {
+jQuery(function($) {
 
   //container width defined in css, 300px
 
@@ -20,10 +20,10 @@ var circlesData = {};
       var area = intersectArea(leftPos, 0, width / 2, width, 0, width / 2);
       // since y coordinates of both circles are fixed, hence taken 0, and x2 coordinate of the other circle is also fixed, so taken 'width', the diameter of the both circles, i.e. same.
 
-      overlapPercentage = Math.round(100 * area / (Math.PI * width * width / 4));
+      overlapPercentage = Math.round(1000000 * area / (Math.PI * width * width / 4));
 
       var id = element.attr('id');
-      //circlesData[id] = {'distance': leftPos, 'overlap': overlapPercentage}
+      circlesData[id] = {'distance': leftPos, 'overlap': overlapPercentage}
       //circlesData[id] = {'overlap': overlapPercentage}
 
       // TODO: for each element, try if there's a corresponding div to show the values
